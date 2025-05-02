@@ -4,6 +4,8 @@ import UserData from "./components/UserData";
 import ExStyles from "./ExStyle";
 import InputForm from "./components/InputForm";
 import FlatListComp from "./components/FlatListComp";
+import MapFunctionComp from "./components/MapFunctionComp.tsx";
+import GridComp from "./components/GridComp.tsx";
 const App = ()=>{
     let nameArr = ['Hamza', 'Hammad', 'Hanan', 'AbdulRehman', 'Abdullah'];
     const [counter, setCounter] = useState(0);
@@ -34,6 +36,8 @@ const App = ()=>{
                 </View>
                 <InputForm/>
                 <FlatListComp/>
+                <MapFunctionComp/>
+                <GridComp/>
             </View>
         </ScrollView>
     );

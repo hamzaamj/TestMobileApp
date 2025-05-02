@@ -28,7 +28,7 @@ const FlatListComp = () => {
     ];
     // @ts-ignore
     return (
-        <View style={{borderTopWidth: .5, borderColor: 'black', paddingTop: 10,marginBottom: 30}}>
+        <View style={{borderTopWidth: .5, borderColor: 'black', paddingTop: 10}}>
             <Text style={{marginLeft: 10, fontSize: 20, fontWeight: 'bold', textAlign: 'center'}}>Flat List Example</Text>
             <FlatList data={listData} renderItem={({item}) => <Text style={[ExStyle.textBox]}>{item.id}. {item.name}</Text>} />
         </View>

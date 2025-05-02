@@ -36,5 +36,16 @@ export default ExStyles = StyleSheet.create({
                                 fontWeight: 'bold',
                                 fontSize: 16,
                             },
+                            gridItem:{
+                                fontSize:20,
+                                textAlign:'center',
+                                textAlignVertical: "center",
+                                margin:8,
+                                color:'white',
+                                padding: 5,
+                                height:120,
+                                width:120,
+                                borderRadius:10,
+                            }
                             });
 
