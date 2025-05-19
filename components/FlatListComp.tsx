@@ -3,29 +3,8 @@ import React from "react";
 import {View, Text, FlatList} from "react-native";
 import ExStyle from "../ExStyle";
 
-const FlatListComp = () => {
-    const listData = [
-        {
-            id: 1,
-            name: "Hamza"
-        },
-        {
-            id: 2,
-            name: "Hammad"
-        },
-        {
-            id: 3,
-            name: "Hanan"
-        },
-        {
-            id: 4,
-            name: "AbdulRehman"
-        },
-        {
-            id: 5,
-            name: "Abdullah"
-        }
-    ];
+const FlatListComp = (props: { nameArray: any; }) => {
+    const listData = props.nameArray;
     // @ts-ignore
     return (
         <View style={{borderTopWidth: .5, borderColor: 'black', paddingTop: 10}}>

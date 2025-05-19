@@ -8,6 +8,50 @@ import MapFunctionComp from "./components/MapFunctionComp.tsx";
 import GridComp from "./components/GridComp.tsx";
 const App = ()=>{
     let nameArr = ['Hamza', 'Hammad', 'Hanan', 'AbdulRehman', 'Abdullah'];
+    const listData = [
+        {
+            id: 1,
+            name: "Hamza"
+        },
+        {
+            id: 2,
+            name: "Hammad"
+        },
+        {
+            id: 3,
+            name: "Hanan"
+        },
+        {
+            id: 4,
+            name: "AbdulRehman"
+        },
+        {
+            id: 5,
+            name: "Abdullah"
+        }
+    ];
+    const gridData = [
+        {
+            id: 1,
+            name: "Hamza Grid"
+        },
+        {
+            id: 2,
+            name: "Hammad Grid"
+        },
+        {
+            id: 3,
+            name: "Hanan Grid"
+        },
+        {
+            id: 4,
+            name: "AbdulRehman Grid"
+        },
+        {
+            id: 5,
+            name: "Abdullah Grid"
+        }
+    ];
     const [counter, setCounter] = useState(0);
     const [name, setName] = useState(nameArr[counter]);
     const ClickEvt = ()=>{
@@ -35,9 +79,9 @@ const App = ()=>{
                     <Button title='Reset' color={'#ec3621'} onPress={() => ClickEvtVal("Hamza")} />
                 </View>
                 <InputForm/>
-                <FlatListComp/>
-                <MapFunctionComp/>
-                <GridComp/>
+                <FlatListComp nameArray={listData}/>
+                <MapFunctionComp nameArray={listData}/>
+                <GridComp gridData={gridData}/>
             </View>
         </ScrollView>
     );
